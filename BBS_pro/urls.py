@@ -20,5 +20,5 @@ import app01
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'', include('app01.urls')),
+    url(r'^bbs/', include('app01.urls')),
 ]

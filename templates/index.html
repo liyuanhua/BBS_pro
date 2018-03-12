@@ -18,7 +18,7 @@
 
     <!-- Custom styles for this template -->
     <link href="/statics/css/navbar-fixed-top/navbar-static-top.css" rel="stylesheet">
-
+    <link href="/statics/css/customize.css" rel="stylesheet">
   </head>
 
   <body>
@@ -37,7 +37,7 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">全部</a></li>
+            <li class="active"><a href="/bbs/">全部</a></li>
               </ul>
             <ul class="nav navbar-nav navbar-right" >
             <li class="dropdown">
@@ -52,12 +52,12 @@
     </nav>
 
 
-    <div class="container">
+    <div class="container center-container-hx">
             {% block page-content %}
       <!-- Main component for a primary marketing message or call to action -->
-      <div class="jumbotron">
+      <div class="contents">
             {% for bbs in bbs_list %}
-                {{ bbs.title }}
+                <a href="/bbs/detail/{{ bbs.id }}"> {{ bbs.title }}</a>
                 <br>
                 {{ bbs.summary }}
                 <hr>
