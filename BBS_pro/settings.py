@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'app01',
-    'django_comments'
+    'django_comments',
+
 ]
 
 SITE_ID = 1
